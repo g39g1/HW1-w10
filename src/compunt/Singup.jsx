@@ -76,7 +76,9 @@ function SignUp() {
           icon: 'error',
           confirmButtonText: 'Okay',
         });
-      } 
+      } finally {
+        setIsLoading(false); 
+      }
     }
   };
 
@@ -145,7 +147,7 @@ function SignUp() {
         <div className="mt-4 text-center">
           <p className="text-sm text-gray-600">
             Already have an account?{' '}
-            <Link to="/signin" className="text-teal-500 hover:underline">Login here</Link>
+            <Link to="/Singin" className="text-teal-500 hover:underline">Login here</Link>
           </p>
         </div>
       </div>
